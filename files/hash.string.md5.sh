@@ -1,5 +1,12 @@
 #!/bin/sh 
 
+# $1 : string
 
-echo -n $1 | md5sum 
+if [ $# -eq 1 ] 
+then
+	echo -n $1 | md5sum 
+else
+	echo "Example : ./hash.string.md5.sh [string]" 
+fi 
+
 

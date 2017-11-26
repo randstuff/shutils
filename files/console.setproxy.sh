@@ -1,8 +1,18 @@
 #!/bin/bash 
 
-#export HTTPS_PROXY=http://127.0.0.1:3128
-#export HTTP_PROXY=http://127.0.0.1:3128
+# $1 : IP
+# $2 : Port 
 
-export HTTPS_PROXY=http://$1:$2
-export HTTP_PROXY=http://$1:$2
+if [ $# -eq 2 ] 
+then
+	echo "export HTTPS_PROXY=http://$1:$2"
+	echo "export HTTP_PROXY=http://$1:$2 \n\n "
+
+	export HTTPS_PROXY=http://$1:$2
+	export HTTP_PROXY=http://$1:$2
+else
+    echo "Specify one interface" 
+        echo "Example : ./console.setproxy.sh 127.0.0.1 8080 " 
+fi 
+
 

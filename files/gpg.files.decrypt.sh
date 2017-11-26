@@ -1,9 +1,12 @@
 #!/bin/sh 
 
-if [ $# -ne 2 ]; then
-	echo "Require two arguments! " 
-    exit 1
-fi
+# $1 : inputPath 
+# $2 : outputPath 
 
-gpg --output $2 --decrypt $1 
+if [ $# -eq 2 ] 
+then
+	gpg --output $2 --decrypt $1 
+else
+	echo "Example : ./gpg.file.decrypt.sh [inputPath] [outputPath]"  
+fi 
 
