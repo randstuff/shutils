@@ -1,4 +1,4 @@
-#!/bin/sh 
+#!/bin/bash -x 
 
 # prevent arp cache poisoning
 

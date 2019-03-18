@@ -1,4 +1,5 @@
-#!/bin/sh 
+#!/bin/bash -x 
+
 
 # $1 : user 
 # $2 : pwd  
@@ -6,7 +7,6 @@
 
 if [ $# -eq 3 ] 
 then
-	echo "mysqldump -u $1 -p $2 --all-database > $3"
 	mysqldump -u$1 -p $2 --all-database > $3 
 else
 	echo "Example : ./mysql.dump.db.sh [user] [pwd] [dumpFile] " 

@@ -1,4 +1,5 @@
-#!/bin/sh 
+#!/bin/bash -x 
+ 
 
 
 gpg --decrypt $1

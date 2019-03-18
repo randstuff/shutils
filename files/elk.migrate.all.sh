@@ -1,4 +1,5 @@
-#!/bin/sh 
+#!/bin/bash -x 
+
 
 # $1 IPsource:port 
 # $2 IPdst:port 

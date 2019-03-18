@@ -1,4 +1,5 @@
-#!/bin/sh 
+#!/bin/bash -x 
+
 
 # $1 : user
 # $2 : pwd 
@@ -6,7 +7,6 @@
 
 if [ $# -eq 3 ] 
 then
-	echo "mysql -u$1 -p $2 < $3 " 
 	mysql -u$1 -p $2 < $3 
 else
 	echo "Example : ./mysql.import.db.sh [user] [pwd] [dumpFile]"  

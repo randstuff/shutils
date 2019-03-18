@@ -1,4 +1,5 @@
-#!/bin/sh 
+#!/bin/bash -x 
+
 
 # $1 : inputPath 
 # $2 : outputPath 

@@ -1,4 +1,5 @@
-#!/bin/sh 
+#!/bin/bash -x 
+
 
 # $1 : srcIP:port 
 # $2 : dstIP:port 

@@ -1,4 +1,5 @@
-#!/bin/sh 
+#!/bin/bash -x 
+
 
 mkdir $HOME/.lock
 date >> $HOME/.lock/logs

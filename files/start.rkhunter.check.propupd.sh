@@ -1,5 +1,5 @@
-#!/bin/sh 
+#!/bin/bash -x 
+ 
 
-echo "sudo rkhunter -c --sk --propupd" 
 sudo rkhunter -c --sk --propupd
 

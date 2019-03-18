@@ -1,5 +1,5 @@
-#!/bin/sh 
+#!/bin/bash -x 
+ 
 
-echo "sudo rkhunter -c --sk"
 sudo rkhunter -c --sk
 

@@ -1,6 +1,6 @@
-#!/bin/sh 
+#!/bin/bash -x 
 
-echo "/usr/local/bin/liteide & "
+
 /usr/local/bin/liteide & 
 
 

@@ -1,4 +1,5 @@
-#!/bin/sh 
+#!/bin/bash -x 
+
 
 
 google-chrome --headless --disable-gpu --window-size=1920,1080 --screenshot=hello.png  $1 

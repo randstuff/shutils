@@ -1,4 +1,5 @@
-#!/bin/sh 
+#!/bin/bash -x 
+ 
 
 
 # $1 : index
