@@ -3,6 +3,8 @@
 # CLOSE ALL SNAPS BEFORE RUNNING THIS
 #set -eu
 
+sudo apt-get clean
+
 snap list --all | awk '/disabled/{print $1, $3}' |
     while read snapname revision; do
         snap remove "$snapname" --revision="$revision"
